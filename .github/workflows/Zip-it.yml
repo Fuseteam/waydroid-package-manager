@@ -30,9 +30,11 @@ jobs:
       - name: zip it
         uses: tuxecure/zip-it@master
         with:
+          prefix: ~/.local
           pkg_directories: bin share
           bin: wpm.sh
           share: repos
+          maintainer: waydroid
           package_name: wpm
       - name: setup release
         uses: spenserblack/actions-tag-to-release@master
