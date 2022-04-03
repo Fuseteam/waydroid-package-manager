@@ -34,7 +34,7 @@ jobs:
                 mv repos wpm
 
       - name: zip it
-        uses: tuxecure/zip-it@v1.1
+        uses: tuxecure/zip-it@v1.2
         with:
           prefix: ${HOME}/.local
           pkg_directories: bin share
