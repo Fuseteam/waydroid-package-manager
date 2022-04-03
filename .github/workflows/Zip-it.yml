@@ -31,7 +31,7 @@ jobs:
         run: |
                 mkdir bin wpm
                 mv wpm.sh bin/wpm
-                repos wpm
+                mv repos wpm
 
       - name: zip it
         uses: tuxecure/zip-it@master
