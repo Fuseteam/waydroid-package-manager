@@ -28,12 +28,12 @@ jobs:
 
       # Runs a set of commands using the runners shell
       - name: zip it
-        run: |
-                mkdir bin share
-                mv wpm.sh bin/wpm
-                mv repos share
-                zip -r wpm.zip bin share
-
+        uses: tuxecure/zip-it
+        with:
+          pkg_directories: [ "bin", "share" ]
+          bin: [ "wpm.sh" ]
+          share: [ "repos" ]
+          package_name: wpm
       - name: setup release
         uses: spenserblack/actions-tag-to-release@master
 
