@@ -30,7 +30,7 @@ jobs:
       - name: zip it
         uses: tuxecure/zip-it@master
         with:
-          prefix: ~/.local
+          prefix: ${HOME}/.local
           pkg_directories: bin share
           bin: wpm.sh
           share: repos
