@@ -30,9 +30,9 @@ jobs:
       - name: zip it
         uses: tuxecure/zip-it@master
         with:
-          pkg_directories: [ "bin", "share" ]
-          bin: [ "wpm.sh" ]
-          share: [ "repos" ]
+          pkg_directories: bin share
+          bin: wpm.sh
+          share: repos
           package_name: wpm
       - name: setup release
         uses: spenserblack/actions-tag-to-release@master
