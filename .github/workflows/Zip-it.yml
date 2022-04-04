@@ -35,6 +35,7 @@ jobs:
         with:
           prefix: ${HOME}/.local
           pkg_directories: bin share
+          bin: wpm
           data_directory: repos
           maintainer: waydroid
           package_name: wpm
