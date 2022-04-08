@@ -31,7 +31,7 @@ jobs:
         run: mv wpm.sh wpm
 
       - name: zip it
-        uses: tuxecure/zip-it@v2.1
+        uses: tuxecure/zip-it@v2.1-alpha
         with:
           pkg_directories: bin share
           bin: wpm
